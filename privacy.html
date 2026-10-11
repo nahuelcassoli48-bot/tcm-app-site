@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — ClipFlow Manager</title>
+<style>
+  body{font-family:system-ui,Segoe UI,Arial,sans-serif;max-width:46rem;margin:2.5rem auto;padding:0 1rem;color:#1d2733;line-height:1.55}
+  h2{margin-top:1.6rem} footer{margin-top:2.5rem;border-top:1px solid #d5dde5;padding-top:1rem} a{margin-right:1rem}
+</style>
+</head>
+<body>
+<h1>Privacy Policy</h1>
+<p><strong>Application:</strong> ClipFlow Manager &nbsp; <strong>Operator:</strong> Nahuel Cassoli &nbsp; <strong>Effective date:</strong> 2026-10-11</p>
+
+<h2>1. How the application works</h2>
+<p>The application is software that runs on the user's own Windows computer. The operator does not run any server for it (the application only opens a temporary listener on the user's own computer to receive TikTok's authorization response), does not receive the user's data, and the application contains no analytics, advertising or tracking.</p>
+
+<h2>2. Information handled when a TikTok account is connected</h2>
+<ul>
+  <li>The TikTok <em>open_id</em> and <em>display name</em> of the account that authorized the application (permission <code>user.info.basic</code>), read after authorization and again whenever the user asks the application to verify the connected account; used only to show which account is connected and to check that the authorization belongs to that account.</li>
+  <li>The OAuth access token and refresh token issued by TikTok, the list of permissions granted, and their expiry dates.</li>
+  <li>The app credentials (client key and client secret) that the user enters from their own TikTok developer account.</li>
+</ul>
+<p>The application also keeps a local history of the videos the user prepares and sends: title, description and hashtags, the path of the video file on the user's computer, the status, the identifier TikTok returns and a log of events. Its purpose is to show the status and to avoid sending the same clip twice from this application. It stays on the computer.</p>
+<p>The application does not request or store the user's TikTok password, followers, messages, videos already published, or any other profile data.</p>
+
+<h2>3. Videos</h2>
+<p>The application sends only video files that the user selects on their own computer, and only after the user confirms each one in the application. The file is transferred directly from the user's computer to TikTok through the official TikTok Content Posting API (<code>video.upload</code>, as a draft in the user's TikTok inbox). It is not copied to any server of the operator.</p>
+
+<h2>4. Where the information is stored and how it is protected</h2>
+<p>The information the application itself keeps is stored only on the user's computer; what is sent to TikTok (the authorization data and the video the user chooses to send) is processed by TikTok under its own terms and privacy policy. Authorization tokens and app credentials are encrypted with Windows data protection (DPAPI), so that only the same Windows user account on that computer can read them.</p>
+
+<h2>5. Sharing</h2>
+<p>The operator does not sell, rent or share the information. The only recipient of data sent by the application is TikTok, when the user connects their account or asks the application to send a draft.</p>
+
+<h2>6. Retention, revoking access and deletion</h2>
+<ul>
+  <li>Inside the application, the option "Revoke and delete" asks TikTok to revoke the authorization and deletes the stored tokens and credentials from the computer.</li>
+  <li>The user can also remove the application's access from the TikTok app settings at any time.</li>
+  <li>"Revoke and delete" (shown as "Revocar y borrar" in the Spanish interface) does not erase the local history of sent videos described above; deleting the application's data folder does.</li>
+  <li>Deleting the application's data folder on the user's computer removes the information the application stores there. Videos already sent to TikTok remain in the user's TikTok account and can be removed there; revoking the authorization in the TikTok settings is a separate step.</li>
+</ul>
+
+<h2>7. This website</h2>
+<p>This website is a static page hosted on GitHub Pages. The operator adds no analytics, cookies or tracking to it; GitHub, as the host, may process technical data of visitors under its own policy.</p>
+
+<h2>8. Changes and contact</h2>
+<p>If this policy changes, the new version will be published at this address with a new effective date. Contact: nahuelcassoli_44@hotmail.com.</p>
+
+<footer><a href="index.html">Home</a><a href="terms.html">Terms of Service</a><p>This application is not affiliated with, endorsed by or sponsored by TikTok.</p></footer>
+</body>
+</html>

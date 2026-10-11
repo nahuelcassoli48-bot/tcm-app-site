@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ClipFlow Manager — desktop tool for creators</title>
+<meta name="description" content="Desktop tool that prepares vertical video clips and sends them as drafts to the creator's own TikTok inbox.">
+<style>
+  body{font-family:system-ui,Segoe UI,Arial,sans-serif;max-width:46rem;margin:2.5rem auto;padding:0 1rem;color:#1d2733;line-height:1.55}
+  h1{margin-bottom:.2rem} .lead{font-size:1.1rem;color:#38495c} nav a,footer a{margin-right:1rem}
+  section{margin-top:1.6rem} footer{margin-top:2.5rem;border-top:1px solid #d5dde5;padding-top:1rem;font-size:.95rem}
+</style>
+</head>
+<body>
+<header>
+  <h1>ClipFlow Manager</h1>
+  <p class="lead">A desktop application for Windows that helps a creator prepare vertical video clips and send them as <strong>drafts</strong> to their own TikTok inbox.</p>
+  <nav><a href="terms.html">Terms of Service</a><a href="privacy.html">Privacy Policy</a></nav>
+</header>
+
+<section>
+  <h2>What it does</h2>
+  <ul>
+    <li>Imports short vertical clips from a folder on the creator's own computer.</li>
+    <li>Lets the creator review the title and hashtags, and checks the video before anything is sent.</li>
+    <li>Connects the creator's own TikTok account with TikTok Login Kit and shows which account is connected.</li>
+    <li>Uploads the selected video to the creator's TikTok <strong>inbox as a draft</strong> using the TikTok Content Posting API. With the permissions it requests (<code>user.info.basic</code> and <code>video.upload</code>) the application cannot publish: the creator opens the TikTok notification, reviews the draft and publishes it in the TikTok app.</li>
+    <li>Asks for an explicit written confirmation for every video it sends, and keeps a local record to help avoid sending the same clip twice from this application.</li>
+  </ul>
+</section>
+
+<section>
+  <h2>TikTok data and permissions</h2>
+  <p>In this TikTok integration the app only requests the permissions it needs: <code>user.info.basic</code> (to show which account is connected) and <code>video.upload</code> (to send a draft to the creator's inbox). Authorization tokens are stored only on the creator's own computer, encrypted with Windows. Details are in the <a href="privacy.html">Privacy Policy</a>.</p>
+</section>
+
+<section>
+  <h2>Status</h2>
+  <p>This is a desktop tool developed and used by its author. It runs on the user's computer and does not operate any server.</p>
+  <p>Contact: nahuelcassoli_44@hotmail.com</p>
+</section>
+
+<footer>
+  <a href="terms.html">Terms of Service</a><a href="privacy.html">Privacy Policy</a>
+  <p>This application is not affiliated with, endorsed by or sponsored by TikTok.</p>
+</footer>
+</body>
+</html>
